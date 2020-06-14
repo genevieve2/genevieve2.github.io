@@ -62,7 +62,7 @@
     var snakeObj = {};
     for (var i = 0; i < snake.length; i++) {
       var a = snake[i];
-      context.fillRect(a.x, a.y, GRID_SIZE, GRID_SIZE); // Paint the snake
+      context.fillRect(a.x, a.y, GRID_SIZE, GRID_SIZE); // Paint the snake!
       // Build a collision lookup object
       if (i > 0) snakeObj[stringifyCoord(a)] = true;
     }
@@ -75,7 +75,7 @@
     }
 
     context.fillStyle = '#b58900';
-    context.fillRect(candy.x, candy.y, GRID_SIZE, GRID_SIZE); // Paint the candy
+    context.fillRect(candy.x, candy.y, GRID_SIZE, GRID_SIZE); // Paint the candy!
   }
 
   window.onload = function() {
